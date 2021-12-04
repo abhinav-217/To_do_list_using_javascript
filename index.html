@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul>
+        <img src="note.png" alt="" />
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li>
+          <input
+            type="text"
+            name="Search"
+            id="searchkit"
+            placeholder="Search here......."
+            onkeyup="search()"
+          />
+        </li>
+      </ul>
+    </nav>
+    <div class="heading">
+      <h2><u>Welcome to i-cloud To Do list</u></h2>
+    </div>
+    <div class="container">
+      <div class="note">
+        <textarea
+          name="Notes"
+          id="addtxt"
+          cols="50"
+          rows="10"
+          placeholder="Enter your Task here......"
+        ></textarea>
+        <button id="btn">Add Task</button>
+      </div>
+    </div>
+
+    <hr />
+    <div class="heading">
+      <h2>Your Task List</h2>
+    </div>
+    <hr />
+
+    <div id="notes" class="shownotes"></div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>
